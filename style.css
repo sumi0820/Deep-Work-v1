@@ -1,0 +1,159 @@
+/*Entire page*/
+
+.timer {
+  font-family: 'Inconsolata', monospace;
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;  
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.timer__controls,
+.sound__controls,
+.display {
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+}
+
+/*temp color*/
+.timer__controls{
+  background: #8E24AA;
+}
+
+.sound__controls{
+  background: yellow;
+}
+
+.display{
+  background: blue;
+}
+
+/*Button decoration*/
+.timer__controls button,
+.sound__controls button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.5s ease;
+  justify-content: space-evenly;
+}
+
+.timer__controls button:hover {
+  background: white;
+  color: black;
+}
+
+.timer__controls button:focus {
+  background: rgba(0,0,0,0.2);
+  outline: 0;
+}
+
+.sound__controls button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.sound__controls button:nth-child(1) {
+  background: #4972a1;
+}
+.sound__controls button:nth-child(2) {
+  background: #a14f49;
+}
+.sound__controls button:nth-child(3) {
+  background: #804000;
+}
+
+.sound__controls button img {
+  height: 100%;
+}
+
+
+/*timer controls*/
+.timer__controls input {
+  border: 0;
+  padding: 2rem;
+  width: 60%;
+  height: .05rem;
+}
+
+.timer__controls button {
+  background: none;
+  width: 60%;
+  height: auto;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 150%;
+  text-transform: uppercase;
+  background: rgba(0,0,0,0.1);
+  border-bottom: 3px solid rgba(0,0,0,0.2);
+  border-right: 1px solid rgba(0,0,0,0.2);
+  padding: 1rem;
+  font-family: 'Inconsolata', monospace;
+}
+
+
+/*display controls*/
+.display {
+  position: relative;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.display__time-left {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  bottom: 50%;
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.05);
+}
+
+.display svg {
+  position: absolute;
+  height: 50%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+
+/*.circle svg circle {
+  transition: all 0.2s ease-in-out;
+}*/
+
+.play__controls button {
+  position: relative;
+  top: 120%;
+  border: none;
+  height: 80px;
+  width: 80px;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.play__controls button:nth-child(1) {
+  background: #4972a1;
+}
+.play__controls button:nth-child(2) {
+  background: #a14f49;
+}
+.play__controls button:nth-child(3) {
+  background: #804000;
+}
