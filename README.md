@@ -1,7 +1,7 @@
 # Deep-Work-v1
 This is a Countdown Clock for work/study.
 
-Fetures: 
+Features: 
 - Timer selector (20mins/5mins/Free timer)
 - BGM selector (Nature/Rain/Cafe sounds)
 
