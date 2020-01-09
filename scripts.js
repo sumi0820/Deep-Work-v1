@@ -6,6 +6,7 @@ const paused = document.querySelector(".pause");
 const stop = document.querySelector(".stop");
 const song = document.querySelectorAll('[data-sound]');
 const songs = document.querySelector(".song");
+const beep = document.querySelector(".beep");
 // const outline = document.querySelector(".moving-outline circle");
 // const outlineLength = outline.getTotalLength();
 
@@ -20,6 +21,7 @@ function timer(seconds) {
   secondsLeft = Math.round((then - Date.now()) / 1000);
     if(secondsLeft < 0) {
       clearInterval(countdown);
+      beep.play();      
       return;
     }
     displayTimeLeft(secondsLeft);

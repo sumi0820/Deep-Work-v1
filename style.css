@@ -24,15 +24,15 @@
 
 /*temp color*/
 .timer__controls{
-  background: #8E24AA;
+  background: #B3BFA7;
 }
 
 .sound__controls{
-  background: yellow;
+  background: #20303F;
 }
 
 .display{
-  background: blue;
+  background: #3ABFB4;
 }
 
 /*Button decoration*/
@@ -69,13 +69,13 @@
 }
 
 .sound__controls button:nth-child(1) {
-  background: #4972a1;
+  background: #3ABFB4;
 }
 .sound__controls button:nth-child(2) {
-  background: #a14f49;
+  background: #9ED8DE;
 }
 .sound__controls button:nth-child(3) {
-  background: #804000;
+  background: #D8462E;
 }
 
 .sound__controls button img {
@@ -149,11 +149,11 @@
 }
 
 .play__controls button:nth-child(1) {
-  background: #4972a1;
+  background: #408085;
 }
 .play__controls button:nth-child(2) {
-  background: #a14f49;
+  background: #EB1C24;
 }
 .play__controls button:nth-child(3) {
-  background: #804000;
+  background: #D8462E;
 }
